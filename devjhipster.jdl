@@ -1,0 +1,54 @@
+application {
+  config {
+    applicationType monolith
+    authenticationType jwt
+    baseName devjhipster
+    blueprints []
+    buildTool maven
+    cacheProvider redis
+    clientFramework react
+    clientPackageManager npm
+    clientTheme yeti
+    creationTimestamp 1696327312317
+    databaseType sql
+    devDatabaseType mysql
+    dtoSuffix DTO
+    enableGradleEnterprise false
+    enableHibernateCache true
+    enableSwaggerCodegen false
+    enableTranslation true
+    gradleEnterpriseHost ""
+    jhiPrefix jhi
+    jwtSecretKey "QHrhPyAJmWnwQ13aRqyDie1yVkc5D+d9w8F18A4IX77VqH0rMi5cN3gzGcOTRSZOXdcA/0itGFtWciHz5sEIdBhHA7jaS8cHfvf6dukV4j05gpylAzKq+JA8k0WvGW4spgdJaC09kT5sdFEnsi4mtkrwMyhfxtNc8ww/1KeCeg=="
+    languages [en, my]
+    messageBroker false
+    microfrontend false
+    microfrontends []
+    nativeLanguage en
+    otherModules []
+    packageName my.codebridge.community.devjhipster
+    prodDatabaseType mysql
+    reactive true
+    searchEngine false
+    serverPort 8080
+    serviceDiscoveryType eureka
+    skipClient false
+    skipUserManagement true
+    testFrameworks []
+    websocket false
+    withAdminUi true
+  }
+
+  entities Help
+}
+
+entity Help {
+  name String
+  abijut String
+}
+
+
+paginate * with pagination
+service * with serviceImpl
+dto * with mapstruct
+
